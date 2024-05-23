@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat Widget</title>
+<style>
+  /* Chat window styles */
+  #chat-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .chat-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+  }
+  .chat-body {
+    height: 300px;
+    overflow-y: scroll;
+    padding: 10px;
+  }
+  .chat-message {
+    margin-bottom: 10px;
+  }
+  .chat-message img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  .chat-message video {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body>
+  <div id="chat-widget">
+    <div class="chat-header">Chat</div>
+    <div class="chat-body" id="chat-body">
+      <!-- Messages will be appended here -->
+    </div>
+    <input type="file" id="file-input" accept="image/*,video/*">
+    <button id="send-btn">Send</button>
+  </div>
+
+  <script src="chat-widget.js"></script>
+</body>
+</html>
